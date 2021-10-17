@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/9/2021 at 20:29)](https://leetcode.com/problems/majority-element/discuss/1526383/Easy-C%2B%2B-solve-in-2-lines-of-code!!)  
 [Discussion Post (created on 17/9/2021 at 20:23)](https://leetcode.com/problems/majority-element/discuss/1526368/Easy-c%2B%2B-solution-using-Moore-Voting-Algo)  
 <h2>169. Majority Element</h2><h3>Easy</h3><hr><div><p>Given an array <code>nums</code> of size <code>n</code>, return <em>the majority element</em>.</p>
 
