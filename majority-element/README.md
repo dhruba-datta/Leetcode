@@ -1,3 +1,4 @@
+[Discussion Post (created on 17/9/2021 at 20:23)](https://leetcode.com/problems/majority-element/discuss/1526368/Easy-c%2B%2B-solution-using-Moore-Voting-Algo)  
 <h2>169. Majority Element</h2><h3>Easy</h3><hr><div><p>Given an array <code>nums</code> of size <code>n</code>, return <em>the majority element</em>.</p>
 
 <p>The majority element is the element that appears more than <code>⌊n / 2⌋</code> times. You may assume that the majority element always exists in the array.</p>
