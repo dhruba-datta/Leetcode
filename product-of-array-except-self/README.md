@@ -1,3 +1,4 @@
+[Discussion Post (created on 20/9/2021 at 19:34)](https://leetcode.com/problems/product-of-array-except-self/discuss/1531575/Multiple-C%2B%2B-solutions-oror-O(n)-and-S(1)!)  
 <h2>238. Product of Array Except Self</h2><h3>Medium</h3><hr><div><p>Given an integer array <code>nums</code>, return <em>an array</em> <code>answer</code> <em>such that</em> <code>answer[i]</code> <em>is equal to the product of all the elements of</em> <code>nums</code> <em>except</em> <code>nums[i]</code>.</p>
 
 <p>The product of any prefix or suffix of <code>nums</code> is <strong>guaranteed</strong> to fit in a <strong>32-bit</strong> integer.</p>
