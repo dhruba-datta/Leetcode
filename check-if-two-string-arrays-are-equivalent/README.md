@@ -1,3 +1,4 @@
+[Discussion Post (created on 22/9/2021 at 9:58)](https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/discuss/1534118/C%2B%2B-solution-with-4ms-runtime)  
 <h2>1662. Check If Two String Arrays are Equivalent</h2><h3>Easy</h3><hr><div><p>Given two string arrays <code>word1</code> and <code>word2</code>, return<em> </em><code>true</code><em> if the two arrays <strong>represent</strong> the same string, and </em><code>false</code><em> otherwise.</em></p>
 
 <p>A string is <strong>represented</strong> by an array if the array elements concatenated <strong>in order</strong> forms the string.</p>
