@@ -1,3 +1,4 @@
+[Discussion Post (created on 28/9/2021 at 20:29)](https://leetcode.com/problems/4sum/discuss/1545624/Brute-force-approach-in-C%2B%2B)  
 <h2>18. 4Sum</h2><h3>Medium</h3><hr><div><p>Given an array <code>nums</code> of <code>n</code> integers, return <em>an array of all the <strong>unique</strong> quadruplets</em> <code>[nums[a], nums[b], nums[c], nums[d]]</code> such that:</p>
 
 <ul>
