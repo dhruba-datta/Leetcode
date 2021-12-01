@@ -1,3 +1,4 @@
+[Discussion Post (created on 1/11/2021 at 22:37)](https://leetcode.com/problems/build-array-from-permutation/discuss/1606435/C%2B%2B-easy-solution!)  
 <h2>1920. Build Array from Permutation</h2><h3>Easy</h3><hr><div><p>Given a <strong>zero-based permutation</strong> <code>nums</code> (<strong>0-indexed</strong>), build an array <code>ans</code> of the <strong>same length</strong> where <code>ans[i] = nums[nums[i]]</code> for each <code>0 &lt;= i &lt; nums.length</code> and return it.</p>
 
 <p>A <strong>zero-based permutation</strong> <code>nums</code> is an array of <strong>distinct</strong> integers from <code>0</code> to <code>nums.length - 1</code> (<strong>inclusive</strong>).</p>
