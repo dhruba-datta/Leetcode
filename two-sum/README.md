@@ -1,3 +1,4 @@
+[Discussion Post (created on 1/0/2022 at 17:12)](https://leetcode.com/problems/two-sum/discuss/1659726/Multiple-solution-with-explanation-in-C%2B%2B)  
 <h2>1. Two Sum</h2><h3>Easy</h3><hr><div><p>Given an array of integers <code>nums</code>&nbsp;and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
 
 <p>You may assume that each input would have <strong><em>exactly</em> one solution</strong>, and you may not use the <em>same</em> element twice.</p>
