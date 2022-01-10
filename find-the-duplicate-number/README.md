@@ -1,3 +1,4 @@
+[Discussion Post (created on 10/0/2022 at 16:49)](https://leetcode.com/problems/find-the-duplicate-number/discuss/1680358/C%2B%2B-solution-0(n)-and-0(1)-space-complexity-explained)  
 <h2>287. Find the Duplicate Number</h2><h3>Medium</h3><hr><div><p>Given an array of integers <code>nums</code> containing&nbsp;<code>n + 1</code> integers where each integer is in the range <code>[1, n]</code> inclusive.</p>
 
 <p>There is only <strong>one repeated number</strong> in <code>nums</code>, return <em>this&nbsp;repeated&nbsp;number</em>.</p>
