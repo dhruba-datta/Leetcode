@@ -3,15 +3,16 @@ public:
     int subarraysDivByK(vector<int>& nums, int k) {
         int sum=0, count=0;
         int n=nums.size();
-        vector<int> mp(k, 0);
+        unordered_map<int, int> mp;
         
         for(auto x:nums){
-            sum += (x%k+k)%k;
-            mp[sum%k]++;
+            sum += x;
+            mp[(sum%k + k)%k]++;
         }
         count = mp[0];
         
-        for(int a:mp){
+        for(auto x:mp){
+            int a = x.second;
             count +=  (a*(a-1))/2;
         }
         
