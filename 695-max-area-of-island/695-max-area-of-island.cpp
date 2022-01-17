@@ -16,16 +16,13 @@ public:
         
         for(int i=0; i<row; i++){
             for(int j=0; j<col; j++){
-                if(grid[i][j]==1)
-                    result = max(result, dfs(grid, i, j));           
-            }
-        }
-        for(int i=0; i<row; i++){
-            for(int j=0; j<col; j++){
-                if(grid[i][j]==2)
+                if(grid[i][j]==1){
+                    result = max(result, dfs(grid, i, j));    
                     grid[i][j]=1;
+                }
             }
         }
+       
         return result;
     }
 };
