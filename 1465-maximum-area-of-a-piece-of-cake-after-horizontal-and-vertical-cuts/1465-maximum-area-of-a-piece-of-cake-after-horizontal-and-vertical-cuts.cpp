@@ -15,7 +15,8 @@ public:
         for(int i=1; i<m; i++)
             mxv = max(mxv, vc[i]-vc[i-1]);
         
+        int mod = 1e9+7;
         
-        return (int)((long)mxh * mxv % 1000000007);
+        return (((long long)mxv%mod)*((long long)mxh%mod))%mod;
     }
 };
