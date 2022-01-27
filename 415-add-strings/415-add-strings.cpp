@@ -6,12 +6,11 @@ public:
         string ans;
 
         while(idx1 > -1 || idx2 > -1 || carry) {
-            int d1 = (idx1 >= 0) ? num1[idx1] - '0' : 0;
-            int d2 = (idx2 >= 0) ? num2[idx2] - '0' : 0;
+            int d1 = (idx1 >= 0) ? num1[idx1--] - '0' : 0;
+            int d2 = (idx2 >= 0) ? num2[idx2--] - '0' : 0;
             int sum = d1 + d2 + carry;
-            carry = sum/10;
+            carry = sum/10; 
             ans.insert(ans.begin(), sum % 10 + '0');
-            idx1--; idx2--;
         }
         return ans;
     }
