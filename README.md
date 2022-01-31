@@ -1,5 +1,6 @@
-# Leetcode🔥![GitHub watchers](https://img.shields.io/github/watchers/dhruba-datta/Leetcode?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/dhruba-datta/Leetcode?style=social)
+# Leetcode🔥![GitHub watchers](https://img.shields.io/github/watchers/dhruba-datta/Leetcode?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/dhruba-datta/Leetcode?style=social)  ![](https://visitor-badge.glitch.me/badge?page_id=dhruba-datta.dhruba-datta/Leetcode")
 
+ 
 Collection of LeetCode questions to ace the coding interview! - Created using [LeetHub](https://github.com/QasimWani/LeetHub).
 
 
