@@ -2,13 +2,14 @@ class Solution {
 public:
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
         int n = strs.size();
-        unordered_map<string, vector<string>> mp;
+        map<map<char, int>, vector<string>> mp;
         vector<vector<string>>ans;
         
         int i=0;
         while(i<n){
-            string a = strs[i];
-            sort(a.begin(), a.end());
+            map<char, int> a;
+            for(int j=0; j<strs[i].size(); j++)
+                a[strs[i][j]]++;
             mp[a].push_back(strs[i]);
             i++;
         }
