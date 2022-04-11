@@ -1,3 +1,4 @@
+[Discussion Post (created on 11/3/2022 at 7:24)](https://leetcode.com/problems/combination-sum-ii/discuss/1934668/Backtracking-solution-with-time-complexity-and-explanations-in-C%2B%2B)  
 <h2>40. Combination Sum II</h2><h3>Medium</h3><hr><div><p>Given a collection of candidate numbers (<code>candidates</code>) and a target number (<code>target</code>), find all unique combinations in <code>candidates</code>&nbsp;where the candidate numbers sum to <code>target</code>.</p>
 
 <p>Each number in <code>candidates</code>&nbsp;may only be used <strong>once</strong> in the combination.</p>
