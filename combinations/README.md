@@ -1,3 +1,4 @@
+[Discussion Post (created on 11/3/2022 at 18:48)](https://leetcode.com/problems/combinations/discuss/1936350/Recursive-and-Iterative-solution-using-C%2B%2B-with-explanations)  
 <h2>77. Combinations</h2><h3>Medium</h3><hr><div><p>Given two integers <code>n</code> and <code>k</code>, return <em>all possible combinations of</em> <code>k</code> <em>numbers out of the range</em> <code>[1, n]</code>.</p>
 
 <p>You may return the answer in <strong>any order</strong>.</p>
