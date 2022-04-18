@@ -11,26 +11,27 @@
  */
 class Solution {
 public:
-    TreeNode* tree = new TreeNode(0); // make new node and initialize with 0 value
-    TreeNode *h = tree; // another node pointing to the head of new node
-    
-    void inorder(TreeNode* root){
-         if(root==NULL){
-            return;
+    TreeNode* increasingBST(TreeNode* root) {
+        vector<int> a(1001, 0);
+        find(root, a);
+        
+        struct TreeNode *ans = new TreeNode(-1);
+        struct TreeNode *temp = ans;
+
+        
+        for(int i=0; i<1001; i++){
+            if(a[i]==1){
+                ans->right = new TreeNode(i);
+                ans = ans->right;
+            }
         }
-        
-        inorder(root->left);
-        tree->right= new TreeNode(root->val);  // make new node with root value 
-        tree->left=NULL;  
-        tree=tree->right;  // move ahead in right direction
-        
-       inorder(root->right);
-       
+        ans = temp;
+
+        return ans->right;
     }
-    
-    TreeNode* increasingBST(TreeNode* root) {       
-        
-        inorder(root);
-        return h->right; // move in right to skip the initial 0 value
+    void find(TreeNode* root,  vector<int> &a){
+        a[root->val] = 1;
+        if(root->left != NULL) find(root->left, a);
+        if(root->right != NULL) find(root->right, a);
     }
 };
