@@ -1,18 +1,15 @@
 class Solution {
 public:
     int countVowelStrings(int n) {
-        int a = 1;
-        int e = 1;
-        int i = 1;
-        int o = 1;
-        int u = 1;
+        int a=1, e=1, i=1, o=1, u=1;
         
-        while (--n){
-            e += a;
-            i += e;
-            o += i;
-            u += o;         
+        while(--n){
+            o += u;
+            i += o;
+            e += i;
+            a += e;
         }
-        return a + e + i + o + u;
+        
+        return a+e+i+o+u;
     }
 };
