@@ -4,9 +4,7 @@ public:
         int count = 0;
         
         for(int i=0; i<grid.size(); i++){
-            for(int j=0; j<grid[0].size(); j++){
-                if(grid[i][j] < 0) count++;
-            }
+            count += upper_bound(grid[i].rbegin(), grid[i].rend(), -1) - grid[i].rbegin();
         }
         
         return count;
