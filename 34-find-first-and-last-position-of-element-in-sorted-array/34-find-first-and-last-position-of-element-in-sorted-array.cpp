@@ -5,11 +5,8 @@ public:
         int a2 = upper_bound(nums.begin(), nums.end(), target) - nums.begin();
         int ans1, ans2;
         
-        if(a1<nums.size() && nums[a1] == target) ans1 = a1;
-        else ans1 = -1;
-        
-        if(a2>0 && nums[a2-1] == target) ans2 = a2-1;
-        else ans2 = -1;
+        ans1 = (a1<nums.size() && nums[a1] == target) ? a1 : -1;
+        ans2 = (a2>0 && nums[a2-1] == target) ? a2-1 : -1;
         
         return {ans1, ans2};
     }
