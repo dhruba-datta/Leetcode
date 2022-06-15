@@ -1,7 +1,9 @@
 class Solution {
 public:
     int minimumSize(vector<int>& w, int maxOperations) {
-        int ans = INT_MIN, low = 1, high = INT_MAX, n = w.size();
+        int ans = INT_MIN, low = 1, high = INT_MIN, n = w.size();
+        
+        for(auto x:w) high = max(high, x);
         
         while(low <= high){
             int mid = low + (high - low) / 2;
