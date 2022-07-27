@@ -19,7 +19,7 @@ public:
             sumOfLeftLeaves(root->left);
         }
         
-        if(flag == true && root->left == NULL && root->right == NULL) sum += root->val;
+        if(flag && !root->left && !root->right) sum += root->val;
         
         if(root->right){
             flag = false;
