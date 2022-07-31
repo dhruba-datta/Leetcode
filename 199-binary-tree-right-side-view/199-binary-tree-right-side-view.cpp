@@ -11,17 +11,16 @@
  */
 class Solution {
 public:
-    void recursion(TreeNode *root, int level, vector<int> &res)
-    {
-        if(root==NULL) return ;
-        if(res.size()<level) res.push_back(root->val);
-        recursion(root->right, level+1, res);
-        recursion(root->left, level+1, res);
+    vector<int> rightSideView(TreeNode* root) {
+        vector<int> ans;
+        help(root, ans, 0);
+        return ans;
     }
-    
-    vector<int> rightSideView(TreeNode *root) {
-        vector<int> res;
-        recursion(root, 1, res);
-        return res;
+    void help(TreeNode* root, vector<int> &ans, int level){
+        if(!root) return;
+        if(ans.size() == level) ans.push_back(root->val);
+        help(root->right, ans, level+1);
+        help(root->left, ans, level+1);
+        return;
     }
 };
