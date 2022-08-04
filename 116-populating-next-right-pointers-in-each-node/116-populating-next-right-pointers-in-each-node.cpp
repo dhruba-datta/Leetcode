@@ -25,15 +25,11 @@ public:
         
         while(!q.empty()){
             int size = q.size();
-            Node* prev = q.front();
+            
             for(int i=0; i<size; i++){
                 Node* front = q.front();
                 q.pop();
-                if(i == size-1) front->next = NULL;
-                if(prev != front){
-                    prev->next = front;
-                    prev = front;
-                }
+                if(i != size-1) front->next = q.front();
                 if(front->left) q.push(front->left);
                 if(front->right) q.push(front->right);
             }
