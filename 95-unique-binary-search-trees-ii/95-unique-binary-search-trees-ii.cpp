@@ -21,17 +21,9 @@ public:
         vector<TreeNode*> ans;
         
         for(int root=l; root<=r; root++){
-            vector<TreeNode*> left = help(l, root-1);
-            vector<TreeNode*> right = help(root+1, r);
-            
-            for(auto x:left){
-                for(auto y:right){
-                    TreeNode* node = new TreeNode(root);
-                    
-                    node->left = x;
-                    node->right = y;
-                    
-                    ans.push_back(node);
+            for(auto left : help(l, root-1)){
+                for(auto right : help(root+1, r)){
+                    ans.push_back(new TreeNode(root, left, right));
                 }
             }
         }
