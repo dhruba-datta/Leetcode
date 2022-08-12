@@ -12,18 +12,12 @@
 class Solution {
 public:
     bool isValidBST(TreeNode* root) {
-        return isValid(root, NULL, NULL);
+        return help(root, LONG_MIN, LONG_MAX);
     }
     
-    bool isValid(TreeNode* root, int* lower, int* upper){
-        if(!root)
-            return true;
-
-        if(upper && root -> val >= *upper)
-            return false;
-        if(lower && root -> val <= *lower)
-            return false;
-        
-        return isValid(root -> left, lower, &(root -> val)) && isValid(root -> right, &(root -> val), upper);
+    bool help(TreeNode* root, long mn, long mx){
+        if(!root) return true;
+        if(root->val >= mx || root->val <= mn) return false;
+        return help(root->left, mn, root->val) && help(root->right, root->val, mx);
     }
 };
