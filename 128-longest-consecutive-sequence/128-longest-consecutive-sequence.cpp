@@ -1,27 +1,23 @@
 class Solution {
 public:
-    int longestConsecutive(vector<int>& arr) {
-        int n = arr.size(); // extract the size of array
-        if(n == 0) return 0; // if length of array is zero, then from here simply return 0
+    int longestConsecutive(vector<int>& nums) {
+        if(nums.size() == 0) return 0;
         
-        sort(arr.begin(), arr.end()); // sort the array
+        sort(nums.begin(), nums.end());
+        int count = 1, ans = -1;
         
-        int mxLen = 0, currLen = 1; // put mxLen = 0, and currLen as 1
-        
-        for(int i = 1; i < n; i++) // traverse from the array
-        {
-            if(arr[i] == arr[i - 1] + 1) // this is the part of consecutive sequence
-            {
-                currLen++; // increase the curr Length by 1
+        for(int i=0; i<nums.size()-1; i++){
+            if(nums[i+1] == nums[i]+1){
+                count++;
+                cout<<count<<" ";
             }
-            else if(arr[i] != arr[i - 1]) // but if it is not equal
-            {
-                mxLen = max(mxLen, currLen); // update our mxLen 
-                currLen = 1; // and reset the currLen with 1
+            else if(nums[i+1] == nums[i]) continue;
+            else{
+                ans = max(ans, count);
+                count = 1;
             }
         }
-        
-        mxLen = max(mxLen, currLen); // update our mxLen 
-        return mxLen; // Finally return mxLen
+        ans = max(ans, count);
+        return ans;
     }
 };
