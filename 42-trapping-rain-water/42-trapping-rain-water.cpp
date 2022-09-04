@@ -1,20 +1,19 @@
 class Solution {
 public:
-    int trap(vector<int>& height) {
-        vector<int> p;
-        vector<int> s(height.size(), 0);
-        int h=0, ans=0;
-        for(auto x:height){
-            h = max(h, x);
-            p.push_back(h);
-        }
-        h=0;
-        for(int i=height.size()-1; i>=0; i--){
-            h=max(h, height[i]);
-            s[i] = h;
-        }
-        for(int i=0; i<height.size(); i++){
-            ans += min(p[i],s[i])-height[i];
+    int trap(vector<int>& h) {
+        int lm=0, rm=0, l=0, r=h.size()-1, ans=0;
+        
+        while(l<r){
+            if(h[l] <= h[r]){
+                if(h[l] >= lm) lm = h[l];
+                else ans += lm-h[l];
+                l++;
+            }
+            else{
+                if(h[r] >= rm) rm = h[r];
+                else ans += rm-h[r];
+                r--;
+            }
         }
         return ans;
     }
