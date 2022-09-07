@@ -1,21 +1,20 @@
 class Solution {
 public:
-    vector<int> temp;
-    vector<vector<int>> ans;
-        
     vector<vector<int>> subsetsWithDup(vector<int>& nums) {
+        vector<int> temp;
+        vector<vector<int>> ans;
         sort(nums.begin(), nums.end());
-        help(0, nums);
+        help(nums, ans, temp, 0);
         return ans;
     }
     
-    void help(int index, vector<int>& nums){
+    void help(vector<int>& nums, vector<vector<int>>& ans, vector<int>& temp, int idx){
         ans.push_back(temp);
         
-        for(int i=index; i<nums.size(); i++){
-            if(i!=index && nums[i]==nums[i-1]) continue;
+        for(int i=idx; i<nums.size(); i++){
+            if(i!=idx && nums[i]==nums[i-1]) continue;
             temp.push_back(nums[i]);
-            help(i+1, nums);
+            help(nums, ans, temp, i+1);
             temp.pop_back();
         }
     }
